@@ -1,0 +1,12 @@
+.terminos{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding: 30px;
+}
+
+.lorem{
+    text-align:justify;
+    font-size: 20px;
+    padding: 0 70px;
+}

@@ -1,0 +1,68 @@
+<%- include('navbar') %>
+
+<div class="contact">
+  <div class="info-grupo">
+    <div class="informacion">
+      <span class="material-symbols-outlined"> home </span>
+      <div class="info-contacto">
+        <p class="bold">California United States</p>
+        <p class="grey">Santa Monica bullevard</p>
+      </div>
+    </div>
+    <div class="informacion">
+      <span class="material-symbols-outlined"> headphones </span>
+      <div class="info-contacto">
+        <p class="bold">00 (440) 9865 562</p>
+        <p class="grey">Mon to Fri 9am to 6pm</p>
+      </div>
+    </div>
+    <div class="informacion">
+      <span class="material-symbols-outlined"> mail </span>
+      <div class="info-contacto">
+        <p class="bold">support@colorlib.com</p>
+        <p class="grey">Send us your query anytime!</p>
+      </div>
+    </div>
+  </div>
+  <form
+    action="/contact"
+    method="post"
+    enctype="application/x-www-form-urlencoded"
+  >
+    <div class="part-form">
+      <input
+        type="text"
+        name="name"
+        id="name"
+        placeholder="Enter your name"
+        required
+      />
+      <input
+        type="email"
+        name="email_address"
+        id="email_address"
+        placeholder="Enter your address"
+        required
+      />
+      <input
+        type="text"
+        name="subject"
+        id="subject"
+        placeholder="Enter your subject"
+        required
+      />
+    </div>
+    <div class="part2-form">
+      <input
+        type="text"
+        name="message"
+        id="message"
+        placeholder="Enter your message"
+        class="message"
+        required
+      />
+      <button type="submit">Send Message</button>
+    </div>
+  </form>
+</div>
+<p class="mensaje"><%- message %></p>

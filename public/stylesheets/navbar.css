@@ -1,0 +1,35 @@
+nav{
+    display: flex;
+    flex-direction: row;
+    width: 100%;
+    height: 70px;
+}
+.title{
+width: 20%;
+display: flex;
+justify-content: center;
+align-items: center;
+font-size: 30px;
+font-weight: bold;
+}
+.links{
+width: 80%;
+display: flex;
+justify-content: center;
+align-items: center;
+}
+
+.links>ul>li{
+    list-style-type: none;
+   
+}
+.links>ul>li>a{
+   text-decoration: none;
+   font-size: 20px;
+   font-weight: bold;
+   color: black;
+}
+
+.links>ul>li:hover{
+border-bottom: 2px solid black;
+}
